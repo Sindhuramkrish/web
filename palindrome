@@ -1,0 +1,23 @@
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+function isPalindrome(str) {
+  let reversed = reverseString(str);
+  return str === reversed;
+}
+
+let word1 = "madam";
+let word2 = "hello";
+console.log(
+  word1,
+  "->",
+  isPalindrome(word1) ? "Palindrome" : "Not a Palindrome"
+);
+console.log(
+  word2,
+  "->",
+  isPalindrome(word2) ? "Palindrome" : "Not a Palindrome"
+);
+
+
+
